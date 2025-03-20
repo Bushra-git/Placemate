@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placemate - Classrooms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Placemate</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="venues.html">Classrooms</a></li>
+        <li><a href="booking.html">Book Venue</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="venue-list">
+    <h2>Available Classrooms</h2>
+    <div class="filters">
+      <input type="text" placeholder="Search by room number">
+      <select id="block">
+        <option value="">Select Block</option>
+        <option value="A">A Block</option>
+        <option value="B">B Block</option>
+        <option value="C">C Block</option>
+        <option value="D">D Block</option>
+        <option value="E">E Block</option>
+        <option value="F">F Block</option>
+        <option value="M">M Block</option>
+      </select>
+      <select id="floor">
+        <option value="">Select Floor</option>
+        <option value="1">1st Floor</option>
+        <option value="2">2nd Floor</option>
+        <option value="3">3rd Floor</option>
+      </select>
+      <button>Search</button>
+    </div>
+    <div class="venue-cards">
+      <!-- Classrooms will be dynamically added here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Placemate. All rights reserved.</p>
+    <p>Vidyalankar Institute of Technology, Mumbai</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
