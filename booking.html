@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placemate - Book Your Classroom</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Placemate</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="venues.html">Classrooms</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="booking-form">
+    <h2>Book Your Classroom</h2>
+    <form id="booking-details">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="classroom">Select Classroom:</label>
+        <select id="classroom" required>
+          <option value="">Choose a classroom</option>
+          <option value="A101">A101</option>
+          <option value="A102">A102</option>
+          <option value="B101">B101</option>
+          <option value="B102">B102</option>
+          <option value="C101">C101</option>
+          <option value="C102">C102</option>
+          <option value="D101">D101</option>
+          <option value="D102">D102</option>
+          <option value="E101">E101</option>
+          <option value="E102">E102</option>
+          <option value="F101">F101</option>
+          <option value="F102">F102</option>
+          <option value="M101">M101</option>
+          <option value="M102">M102</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Booking Date:</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="start-time">Start Time:</label>
+        <input type="time" id="start-time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="end-time">End Time:</label>
+        <input type="time" id="end-time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="purpose">Purpose of Booking:</label>
+        <textarea id="purpose" rows="4" required placeholder="Enter the purpose of booking"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Placemate. All rights reserved.</p>
+    <p>Vidyalankar Institute of Technology, Mumbai</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
